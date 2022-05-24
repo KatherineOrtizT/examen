@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RaquelExamen.xsd">
+
+    <comunidadAutonoma>
+        <nombre>Madrid</nombre>
+        <provincia>
+            <nombre>Madrid</nombre>
+            <poblacion>
+                <nombre>Alcobendas</nombre>
+                <prediccion>
+                    <fecha>2022-09-18</fecha>
+                    <temperaturaMaxima>35</temperaturaMaxima>
+                    <temperaturaminima>24</temperaturaminima>
+                    <probabilidadLLuvia>1</probabilidadLLuvia>
+                    <avisosRiesgo>viento</avisosRiesgo>
+                </prediccion>
+                <prediccion>
+                    <fecha>2022-09-19</fecha>
+                    <temperaturaMaxima>29</temperaturaMaxima>
+                    <temperaturaminima>20</temperaturaminima>
+                    <probabilidadLLuvia>5</probabilidadLLuvia>
+                    <avisosRiesgo>nieve</avisosRiesgo>
+                    <avisosRiesgo>viento</avisosRiesgo>
+                </prediccion>
+            </poblacion>
+            <poblacion>
+                <nombre>Mostoles</nombre>
+                <prediccion>
+                    <fecha>1999-09-18</fecha>
+                    <temperaturaMaxima>15</temperaturaMaxima>
+                    <temperaturaminima>10</temperaturaminima>
+                    <probabilidadLLuvia>5</probabilidadLLuvia>
+                    <avisosRiesgo>huracan</avisosRiesgo>
+                </prediccion>
+            </poblacion>
+        </provincia>
+    </comunidadAutonoma>
+</informacion>

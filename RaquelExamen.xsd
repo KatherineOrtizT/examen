@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <!-- DECLARAMOS LOS ELEMNTOS SIMPLES -->
+<xs:element name="nombre" type="xs:string"/>
+<xs:element name="fecha" type="xs:date"/>
+<xs:element name="temperaturaMaxima" type="temperatura"/>
+<xs:element name="temperaturaminima" type="temperatura"/>
+<xs:element name="probabilidadLLuvia">
+    <xs:simpleType>
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="avisosRiesgo">
+    <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="viento"/>
+      <xs:enumeration value="nieve"/>
+      <xs:enumeration value="tormentas"/>
+      <xs:enumeration value="huracan"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<!-- CREAMOS EL TIPO TEMPERATURA CON RANGOS -->
+<xs:simpleType name="temperatura">
+  <xs:restriction base="xs:integer">
+    <xs:minInclusive value="-15"/>
+    <xs:maxInclusive value="45"/>
+  </xs:restriction>
+</xs:simpleType>
+ 
+
+<!-- DEFINIMOS LOS ELEMNTOS COMPUESTOS -->
+<xs:element name="prediccion">
+    <xs:complexType>
+        <xs:sequence>
+        <xs:element ref="fecha" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="temperaturaMaxima" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="temperaturaminima" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="probabilidadLLuvia" minOccurs="0" maxOccurs="1"/>
+        <xs:element ref="avisosRiesgo" minOccurs="0" maxOccurs="10"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="poblacion">
+    <xs:complexType>
+        <xs:sequence>
+        <xs:element ref="nombre" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="prediccion" minOccurs="1" maxOccurs="31"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="provincia">
+    <xs:complexType>
+        <xs:sequence>
+        <xs:element ref="nombre" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="poblacion" minOccurs="1" maxOccurs="20"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="comunidadAutonoma">
+    <xs:complexType>
+        <xs:sequence>
+        <xs:element ref="nombre" minOccurs="1" maxOccurs="1"/>
+        <xs:element ref="provincia" minOccurs="0" maxOccurs="20"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+    
+<!-- DECLARAMOS EL ELEMNTO RAIZ -->
+<xs:element name="informacion">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="comunidadAutonoma" minOccurs="0" maxOccurs="17"/>
+        </xs:sequence>
+    </xs:complexType>    
+</xs:element>
+
+
+
+</xs:schema>
