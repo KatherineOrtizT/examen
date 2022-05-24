@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="RaquelExamen.xsd">
+
+    <comunidadAutonoma>
+        <nombre>Madrid</nombre>
+        <provincia>
+            <nombre>Madrid</nombre>
+            <!-- <poblacion>
+                <nombre>Alcobendas</nombre>
+                <prediccion>
+                    <fecha>1999-09-18</fecha>
+                    <temperaturaMaxima>17</temperaturaMaxima>
+                    <temperaturaminima>6</temperaturaminima>
+                    <probabilidadLLuvia>5</probabilidadLLuvia>
+                    <avisosRiesgo>viento</avisosRiesgo>
+                </prediccion>
+            </poblacion>
+            <poblacion>
+                <nombre></nombre>
+                <prediccion>
+                    <fecha>1999-09-18</fecha>
+                    <temperaturaMaxima>35</temperaturaMaxima>
+                    <temperaturaminima>15</temperaturaminima>
+                    <probabilidadLLuvia>3</probabilidadLLuvia>
+                    <avisosRiesgo>huracan</avisosRiesgo>
+                </prediccion>
+            </poblacion> -->
+        </provincia>
+    </comunidadAutonoma>
+</informacion>
