@@ -19,14 +19,14 @@
                     <temperaturaMaxima>29</temperaturaMaxima>
                     <temperaturaminima>20</temperaturaminima>
                     <probabilidadLLuvia>5</probabilidadLLuvia>
-                    <avisosRiesgo>nieve</avisosRiesgo>
+                    <avisosRiesgo>nieve</avisosRiesgo> <!-- tienes la opcion de poner varios maximo 10 -->
                     <avisosRiesgo>viento</avisosRiesgo>
                 </prediccion>
             </poblacion>
             <poblacion>
                 <nombre>Mostoles</nombre>
                 <prediccion>
-                    <fecha>1999-09-18</fecha>
+                    <fecha>2020-09-18</fecha>
                     <temperaturaMaxima>15</temperaturaMaxima>
                     <temperaturaminima>10</temperaturaminima>
                     <probabilidadLLuvia>5</probabilidadLLuvia>

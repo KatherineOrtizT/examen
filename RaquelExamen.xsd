@@ -7,7 +7,7 @@
 <xs:element name="temperaturaminima" type="temperatura"/>
 <xs:element name="probabilidadLLuvia">
     <xs:simpleType>
-        <xs:restriction base="xs:positiveInteger">
+        <xs:restriction base="xs:positiveInteger">  <!-- que sean positivos y maximo hasta 100 -->
             <xs:maxInclusive value="100"/>
         </xs:restriction>
     </xs:simpleType>
@@ -15,7 +15,7 @@
 <xs:element name="avisosRiesgo">
     <xs:simpleType>
     <xs:restriction base="xs:string">
-      <xs:enumeration value="viento"/>
+      <xs:enumeration value="viento"/> <!-- pueden ser solo estas opciones -->
       <xs:enumeration value="nieve"/>
       <xs:enumeration value="tormentas"/>
       <xs:enumeration value="huracan"/>

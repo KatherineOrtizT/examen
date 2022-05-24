@@ -1,0 +1,25 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    width: 33%;
+}
+h3{
+    width: 100%;
+}
+h2{
+    color: purple;
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+
+    article {
+        width: 49%;
+    }
+}
+@media only screen and (max-width: 600px)  {
+    article{
+        width: 100%;
+    }  
+}
