@@ -73,7 +73,7 @@
 <!-- DECLARAMOS EL ELEMNTO RAIZ -->
 <xs:element name="informacion">
     <xs:complexType>
-        <xs:sequence>
+        <xs:sequence maxOccurs="17">
             <xs:element ref="comunidadAutonoma" minOccurs="0" maxOccurs="17"/>
         </xs:sequence>
     </xs:complexType>    

@@ -3,7 +3,7 @@
 
     <comunidadAutonoma>
         <nombre>Madrid</nombre>
-        <provincia>
+        <provincia> <!-- provincia sin poblacion no es valido-->
             <nombre>Madrid</nombre>
             <!-- <poblacion>
                 <nombre>Alcobendas</nombre>
@@ -26,5 +26,10 @@
                 </prediccion>
             </poblacion> -->
         </provincia>
+    </comunidadAutonoma>
+
+    <comunidadAutonoma> <!-- para comprobar que pueden haber comunidades sin provincias-->
+        <nombre>Toledo</nombre>
+
     </comunidadAutonoma>
 </informacion>

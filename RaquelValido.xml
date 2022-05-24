@@ -11,16 +11,13 @@
                     <fecha>2022-09-18</fecha>
                     <temperaturaMaxima>35</temperaturaMaxima>
                     <temperaturaminima>24</temperaturaminima>
-                    <probabilidadLLuvia>1</probabilidadLLuvia>
-                    <avisosRiesgo>viento</avisosRiesgo>
+                    <probabilidadLLuvia>1</probabilidadLLuvia> <!-- no tiene avisosRiesgo-->
                 </prediccion>
                 <prediccion>
                     <fecha>2022-09-19</fecha>
                     <temperaturaMaxima>29</temperaturaMaxima>
                     <temperaturaminima>20</temperaturaminima>
                     <probabilidadLLuvia>5</probabilidadLLuvia>
-                    <avisosRiesgo>nieve</avisosRiesgo> <!-- tienes la opcion de poner varios maximo 10 -->
-                    <avisosRiesgo>viento</avisosRiesgo>
                 </prediccion>
             </poblacion>
             <poblacion>
@@ -30,6 +27,8 @@
                     <temperaturaMaxima>15</temperaturaMaxima>
                     <temperaturaminima>10</temperaturaminima>
                     <probabilidadLLuvia>5</probabilidadLLuvia>
+                    <avisosRiesgo>nieve</avisosRiesgo> <!-- tienes la opcion de poner varios maximo 10 -->
+                    <avisosRiesgo>viento</avisosRiesgo>
                     <avisosRiesgo>huracan</avisosRiesgo>
                 </prediccion>
             </poblacion>
