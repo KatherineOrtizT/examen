@@ -1,7 +1,9 @@
+/* usamos display flex y que tenga saltos wrap */
 section{
     display: flex;
     flex-wrap: wrap;
 }
+/* el tamaño que usa los articulos */
 article {
     width: 33%;
 }
@@ -13,7 +15,7 @@ h2{
 }
 
 @media only screen and (max-width: 900px) and (orientation: landscape) {
-
+/* el tamaño que ocupa los articulos en tablets horizontal y escritorio vertical*/
     article {
         width: 49%;
     }
